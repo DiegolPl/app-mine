@@ -1,0 +1,21 @@
+Ideas:
+    - Registro de coords separados por dimension
+    - Permitir ordenarlos por orden alfabetico
+    - Permitir la eliminacion de coords
+    - Permitir la edicion de coords
+
+    - Registro de logros vanilla
+    - Creacion y registro de logros personalizados
+    - Permitir la eliminacion de logros
+    - Permitir la edicion de coords
+    - Filtro de logros [completados, incompletos, todos]
+
+    - Sistema de posteos tipo diario de aventuras, donde poder subir fotos de la partida del dia y dejar una descripcion. Esas fotos pueden ponerse en alguna especie de carrousel
+    - Permitir reiniciar todo a 0 para que sea reutilizable (individualizado y total?)
+    - Poder crear un coso de esto por cada mundo que juguemos?
+
+    - Un to-do para anotar lo q tengo q hacer - farmear
+    
+    - Un setting de colores (bg, font, etc) y algo mas?
+    
+    - Para agregar cada tipo de contenido respectivamente puede ser a traves de un boton en la parte inf dcha (+) y eso despliegue una 'ventana' flotante con un formulario.

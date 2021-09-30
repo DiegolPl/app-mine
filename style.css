@@ -1,0 +1,256 @@
+:root {
+    --main-color: rgb(230, 240, 226);
+    --main-modal-color: rgba(230, 240, 226, .5);
+    --second-color: rgb(43, 43, 43);
+    --second-modal-color: rgba(43, 43, 43, .5);
+    /* --main-color: rgb(130, 240, 79);
+    --main-modal-color: rgba(130, 240, 79, .5);
+    --second-color: rgb(43, 43, 43);
+    --second-modal-color: rgba(43, 43, 43, .5); */
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: var(--second-color);
+}
+
+body {
+    overflow-x: hidden;
+    /* height: 100vh; */
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    justify-content: space-evenly;
+    /* background-color: #a3a3a3; */
+}
+nav a {
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    text-decoration: none;
+    background-color: var(--main-modal-color);
+    color: var(--second-color);
+    line-height: 8vh;
+    font-weight: bold;
+    border-top: 2px solid var(--main-color);
+}
+
+nav a:hover {
+    background-color: var(--second-color);
+    border-left: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    color: var(--main-color);
+    border-top: none;
+}
+
+nav a p.active {
+    text-decoration: underline;
+}
+
+nav a:first-child:hover {
+    border-left: none;
+}
+
+nav a:last-child:hover {
+    border-right: none;
+}
+
+main {
+    width: 100%;
+    height: 92vh;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--second-color);
+}
+
+i.options {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: #333;
+    background-color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+i.options:hover {
+    color: #222;
+    transform: scale(1.05);
+}
+
+article.menu {
+    position: absolute;
+    left: -10000px;
+    width: 100vw;
+    height: 92vh;
+    display: none;
+}
+
+article.activo{
+    left: 0;
+    position: relative;
+    display: block;
+
+}
+
+.hero {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--main-color);
+    border-bottom: 2px solid var(--second-color);
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+
+}
+
+h2.title {
+    padding-left: 3vh;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+article.contenedor__tareas--general {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+}
+
+section.contenedor__tareas--tareas {
+    height: 74vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: auto;
+
+}
+
+div.tareas {
+    padding: 15px;
+    padding-right: 30px;
+    border-bottom: 2px solid #333;
+    cursor: pointer;
+    position: relative;
+}
+
+div.tareas:hover {
+    background-color: #ddd;
+}
+
+div.tareas:hover i.tachito {
+    display: block;
+}
+
+section.contenedor__tareas--tarea {
+    height: 74vh;
+    width: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: .9rem 0 2rem;
+}
+
+.box__tarea {
+    margin-bottom: 50px;
+}
+
+.box__tarea h2 {
+    border-bottom: 2px solid #333;
+    padding: 20px;
+}
+
+.tarea {
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 2px solid #333;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+    overflow-x: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.tarea:hover {
+    background-color: #ddd;
+}
+
+.tarea:first-child {
+    border-top: 2px solid #333;
+    color: aqua;
+}
+
+.tarea input[type="checkbox"] {
+    position: relative;
+    top: 50%;
+    /* transform: translateY(-20%); */
+    margin: 8px;
+    width: 15px;
+}
+
+.tarea label {
+    display: inline-block;
+    width: calc(100% - 36px);
+    padding: 10px;
+    cursor: pointer;
+}
+
+i.tachito {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: #333;
+    padding: 5px;
+    display: none;
+}
+
+.tarea:hover i.tachito {
+    display: block;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+i.add {
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    color: var(--second-color);
+}
+
+i.add:hover {
+    transform: scale(1.05);
+    color: rgb(4, 29, 2);
+    cursor: pointer;
+}

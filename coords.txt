@@ -1,0 +1,4 @@
+Overworld:
+    - SpawnChunks - Mesa: 5 / 64 / 5
+    - Planicie en taiga con montaña y bioma mesa de fondo: -40 / 77 / -280
+    
